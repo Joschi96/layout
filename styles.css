@@ -41,17 +41,32 @@ button{
 
 }
 
-.hero{
+.hero,
+.info,
+.quote{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 48px;
     padding: 48px;
 }
+
+.info{
+    flex-direction: column;
+}
+
+.quote{
+    background-color: #E5E7EB;
+}
+
+.quote-box{
+    max-width: 650px;
+}
+
 .hero-main{
     color: #F9FAF8;
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 900;
 
 }
 
@@ -67,8 +82,8 @@ button{
 }
 
 .image{
-    background-color: rgb(202, 202, 202);
-    color: white;
+    background-color: #E5E7EB;
+    color: #000000;
     width: 450px;
     height: 180px;
     display: flex;
@@ -80,3 +95,50 @@ button{
     width: 450px;
 }
 
+.info-h1{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4px 32px;
+}
+
+.card-image{
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-color: #3882f6;
+    border-radius: 16px;
+    border-width: 4px;
+    margin: 8px 0px;
+}
+.sub{
+    width: 150px;
+    color: #1F2937;
+}
+
+.text{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.author{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1F2937;
+    text-align: right;
+}
