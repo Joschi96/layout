@@ -3,6 +3,7 @@ body{
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 ul{
@@ -17,14 +18,31 @@ button{
     background-color: #3882f6;
     color: white;
     border: none;
-    padding: 4px 16px; 
-    font-size: 16px;
+    padding: 8px 24px; 
+    font-size: 14px;
+    font-weight: bold;
     border-radius: 6px;
 }
 
+.action button{
+    border: solid;
+    border-width: 2px;
+    border-color: #F9FAF8;
+}
+
 .hero,
-.header{
+.header,
+.footer{
     background-color: #1F2937;
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
 }
 
 .header-center{
@@ -34,6 +52,19 @@ button{
     padding: 16px 0px;
 
 }
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 950px;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 48px 0px;
+    gap: 48px;
+    border-radius: 8px;
+}
+
 .header{
     display: flex;
     justify-content: center;
@@ -43,12 +74,17 @@ button{
 
 .hero,
 .info,
-.quote{
+.quote,
+.action{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 48px;
     padding: 48px;
+}
+
+.action{
+    padding: 64px 48px;
 }
 
 .info{
@@ -119,7 +155,7 @@ button{
     border-style: solid;
     width: 150px;
     height: 150px;
-    border-color: #3882f6;
+    border-image: linear-gradient(to right, #3882f6, #9cc7ff) 1;
     border-radius: 16px;
     border-width: 4px;
     margin: 8px 0px;
@@ -141,4 +177,14 @@ button{
     font-weight: bold;
     color: #1F2937;
     text-align: right;
+}
+
+.action .main{
+   font-size: 18px;
+   font-weight: bold;
+   color: #F9FAF8;
+}
+
+.action .second{
+   color: #E5E7EB;
 }
